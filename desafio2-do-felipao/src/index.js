@@ -7,7 +7,7 @@ function objetoJogado() {
   return Math.floor(Math.random() * 3);
 }
 
-// função que calcula ranking (DESAFIO DIO)
+// ranking 
 function calcularRank(vitorias, derrotas) {
   let saldo = vitorias - derrotas;
   let nivel;
@@ -65,7 +65,7 @@ for (let i = 0; i < totalPartidas; i++) {
 // calcula ranking final
 let resultado = calcularRank(vitorias, derrotas);
 
-// saída final (EXIGIDA NO DESAFIO)
+// resutado final
 console.log("\n===== RESULTADO FINAL =====");
 console.log(
   `O Herói tem de saldo de ${resultado.saldo} está no nível de ${resultado.nivel}`
